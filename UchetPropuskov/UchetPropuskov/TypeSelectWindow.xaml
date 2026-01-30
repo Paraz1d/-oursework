@@ -1,0 +1,24 @@
+﻿<Window x:Class="UchetPropuskov.TypeSelectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Тип пропуска"
+        Height="220" Width="300"
+        WindowStartupLocation="CenterOwner">
+
+    <StackPanel Margin="15">
+        <TextBlock Text="Выберите тип пропуска"
+                   FontWeight="Bold"
+                   Margin="0,0,0,10"/>
+
+        <ListBox>
+            <ListBoxItem>Уважительная причина</ListBoxItem>
+            <ListBoxItem>Неуважительная причина</ListBoxItem>
+            <ListBoxItem>Болезнь</ListBoxItem>
+        </ListBox>
+
+        <Button Content="OK"
+                Margin="0,10,0,0"
+                Height="30"
+                HorizontalAlignment="Right"/>
+    </StackPanel>
+</Window>

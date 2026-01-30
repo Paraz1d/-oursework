@@ -1,0 +1,31 @@
+﻿<Window x:Class="UchetPropuskov.ImportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Импорт данных"
+        Height="350" Width="450"
+        WindowStartupLocation="CenterOwner">
+
+    <StackPanel Margin="15">
+
+        <TextBlock Text="Что импортировать:" FontWeight="Bold" Margin="0,0,0,5"/>
+
+        <RadioButton x:Name="rbGroups" Content="Группы" Margin="0,3"/>
+        <RadioButton x:Name="rbStudents" Content="Студенты" Margin="0,3"/>
+        <RadioButton x:Name="rbSubjects" Content="Предметы" Margin="0,3"/>
+        <RadioButton x:Name="rbUsers" Content="Пользователи" Margin="0,3"/>
+
+        <Separator Margin="0,10"/>
+
+        <TextBox x:Name="tbFile" IsReadOnly="True" Height="25" Margin="0,0,0,5"/>
+        <Button Content="Выбрать CSV файл" Click="SelectFile_Click" Height="30"/>
+
+        <Separator Margin="0,10"/>
+
+        <Button Content="Импортировать"
+                Height="35"
+                Background="#4CAF50"
+                Foreground="White"
+                Click="Import_Click"/>
+
+    </StackPanel>
+</Window>

@@ -1,0 +1,10 @@
+﻿<Window x:Class="UchetPropuskov.GroupsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Группы" Height="300" Width="400" WindowStartupLocation="CenterOwner">
+    <StackPanel Margin="10">
+        <TextBox x:Name="tbGroupName" Text="Название группы" Margin="0,0,0,10"/>
+        <Button Content="Добавить группу" Click="AddGroup_Click" Margin="0,0,0,10"/>
+        <ListBox x:Name="lbGroups" Height="180"/>
+    </StackPanel>
+</Window>

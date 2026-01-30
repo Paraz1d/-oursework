@@ -1,0 +1,31 @@
+﻿<Window x:Class="UchetPropuskov.AbsenceTypeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Тип пропуска"
+        Height="200"
+        Width="250"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+
+    <StackPanel Margin="20">
+        <TextBlock Text="Выберите тип пропуска"
+                   FontSize="14"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,15"/>
+
+        <Button Content="У — уважительная"
+                Margin="0,0,0,5"
+                Height="30"
+                Click="U_Click"/>
+
+        <Button Content="Н — неуважительная"
+                Margin="0,0,0,5"
+                Height="30"
+                Click="N_Click"/>
+
+        <Button Content="Б — болезнь"
+                Height="30"
+                Click="B_Click"/>
+    </StackPanel>
+</Window>

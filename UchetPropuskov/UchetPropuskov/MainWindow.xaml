@@ -1,0 +1,20 @@
+﻿<Window x:Class="UchetPropuskov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Вход в систему"
+        Height="300" Width="420"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <Border Width="320" Padding="20" Background="White" CornerRadius="8" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#DDD" BorderThickness="1">
+            <StackPanel>
+                <TextBlock Text="Учёт пропусков" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+                <TextBlock Text="Логин"/>
+                <TextBox x:Name="tbLogin" Height="30" Margin="0,5"/>
+                <TextBlock Text="Пароль"/>
+                <PasswordBox x:Name="tbPassword" Height="30" Margin="0,5"/>
+                <Button Content="Войти" Height="35" Margin="0,20,0,0" Click="Login_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

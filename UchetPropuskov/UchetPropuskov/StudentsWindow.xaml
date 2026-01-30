@@ -1,0 +1,11 @@
+﻿<Window x:Class="UchetPropuskov.StudentsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Студенты" Height="400" Width="400" WindowStartupLocation="CenterOwner">
+    <StackPanel Margin="10">
+        <TextBox x:Name="tbFio" Text="ФИО студента" Margin="0,0,0,10"/>
+        <ComboBox x:Name="cbGroups" DisplayMemberPath="Название" SelectedValuePath="ГруппаID" Margin="0,0,0,10"/>
+        <Button Content="Добавить студента" Click="AddStudent_Click" Margin="0,0,0,10"/>
+        <ListBox x:Name="lbStudents" Height="250"/>
+    </StackPanel>
+</Window>

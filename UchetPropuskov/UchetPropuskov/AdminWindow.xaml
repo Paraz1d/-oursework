@@ -1,0 +1,24 @@
+﻿<Window x:Class="UchetPropuskov.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Пульт администратора"
+        Height="400" Width="200"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#F0F2F5">
+
+    <StackPanel Margin="10" VerticalAlignment="Center">
+
+        <TextBlock Text="Администратор" 
+                   FontSize="18" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+        <Button Content="Группы" Height="40" Margin="0,5" Click="BtnGroups_Click"/>
+        <Button Content="Студенты" Height="40" Margin="0,5" Click="BtnStudents_Click"/>
+        <Button Content="Предметы" Height="40" Margin="0,5" Click="BtnSubjects_Click"/>
+        <Button Content="Пользователи" Height="40" Margin="0,5" Click="BtnUsers_Click"/>
+        <Button Content="Отчёты" Height="40" Margin="0,5" Click="BtnReports_Click"/>
+        <Button Content="Импорт данных" Height="40" Margin="0,5" Click="BtnImport_Click"/>
+
+    </StackPanel>
+</Window>
